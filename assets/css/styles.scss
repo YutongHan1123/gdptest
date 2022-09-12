@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    max-width: 640px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'PingFangSC-Light', '微软雅黑', 'Droidsansfallback', BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    color: white;
+    background: #0C2F47;
+    background-image: url("../img/back.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// bar and scatter
+.bar_chart_title {
+    font-size: 22px;
+    fill: white;
+}
+
+.axis text, .yAxis text {
+    font-family: sans-serif;
+    font-size: 16px;
+    fill: white;
+}
+
+.axis .axis--x {
+    stroke-width: .0125rem;
+    stroke: white;
+}
+
+.lollipop-line {
+    stroke: white;
+    stroke-width: 1px;
+}
+
+.lollipop-start {
+    fill: #39c2c9;
+    color: #39c2c9;
+}
+
+.lollipop-end {
+    fill: #ffa71a;
+    color: #ffa71a;
+}
+
+.lollipop-median {
+    fill: white;
+    color: white;
+}
+.bar {
+    z-index: 10;
+}
+
+.tooltip {
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    background: white;
+    border: 0 none;
+    border-radius: 4px;
+    color: #F8786B;
+    font: 12px sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+
+// .exit{
+//     position: absolute;
+//     top:8px;
+//     right: 8px;
+//     font-size: 15px;
+//     color: black;
+// }

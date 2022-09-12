@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+  	<meta name="apple-mobile-web-app-capable" content="yes" />
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <title>GDP Test</title>
+    <link rel="stylesheet" href="assets/css/bootstrap-3.3.7min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <script src="assets/js/jquery-1.7.2.min.js" language="javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="line"></div>
+
+        <h1>test</h1>
+        <p>Different asset allocations offer a range of potential risk and return characteristics.
+        </p>
+
+        <p id="summary"></p>
+
+        <div class="btn-group" role="group">
+            <button type="button" id="scatter" class="btn btn-default" value="scatter">GDP</button>
+            <button type="button" id="bar" class="btn btn-default" value="bar">人均GDP</button>
+        </div>
+        <div class="tooltip"></div>
+        <div>
+            <svg id="chart" height=800></svg>
+        </div>
+
+        <p>数据来源：各地统计局</p>
+        <p>制作：韩雨彤</p>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="stars"></div>
+    </div>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/var.js"></script>
+    <script src="assets/js/charts.js"></script>
+
+</body>
+</html>
+
+</html>
