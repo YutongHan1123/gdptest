@@ -2,19 +2,42 @@
     padding: 0;
     margin: 0;
 }
+
+// body:before {
+// 	content:"";
+// 	position:fixed;
+// 	left:0;
+// 	top:0;
+// 	right:0;
+// 	bottom:0;
+// 	z-index:-1; 
+// 	background:#D8D8D8;
+// 	background-image: linear-gradient(to bottom, #6E34C3, #5091C9), url(../img/back.png) ;
+// }
+
 body {
     width: 100vw;
     overflow-x: hidden;
     max-width: 640px;
+    min-height: 100vh;
     display: block;
     margin: 0 auto;
-    font-family: 'PingFangSC-Light', '微软雅黑', 'Droidsansfallback', BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-family: 'PingFangSC-Light', '微软雅黑', BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
     color: white;
-    background: #0C2F47;
-    background-image: url("../img/back.png");
+    background-image: linear-gradient(to bottom, #6E34C3, #0060B3);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.back_img {
+    width: 640px;
+}
+
+@media (max-width:640px) {
+    .back_img {
+        width: 100vw;
+    }
 }
 
 // bar and scatter
@@ -29,9 +52,12 @@ body {
     fill: white;
 }
 
-.axis .axis--x {
-    stroke-width: .0125rem;
+.axis--x line, .axis--x path {
     stroke: white;
+}
+
+.axis--y line, .axis--y path {
+    stroke-width: 0;
 }
 
 .lollipop-line {
